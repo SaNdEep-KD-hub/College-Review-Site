@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CampusInsider</title>
+        <link
+            href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+            rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"
+            rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+        <link rel="stylesheet" href="css/index.css" />
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- Header Part -->
+        <header>
+            <a href="#" class="logo"><img src="img/website logo.png" alt="" style="height: 50px; width: 100%;"></a>
+            <nav class="navbar">
+                <div class="btn">
+                    <i class="fas fa-times close-btn"></i>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="aboutPage/about.html">About</a>
+                <a href="newcontactform-main/index.html">Contact Us</a>
+                <a href="loginpage/ibm login page.html">Log In/ Sign Up</a>
+                
+            </nav>
+            <div class="btn">
+                <i class="fas fa-bars menu-btn"></i>
+            </div>
+        </header>
+        <!-- front section  -->
+        <div class="boxxy">
+            <div class="content">
+                <h3>Discover, Review and Empower Your Academic Journey</h3>
+                <p>
+                    Your College Journey Starts Here: Find the Right Fit with Honest Student Reviews and Ratings
+                </p>
+                <a href="main-listing.html"><button class="btn">
+                    Explore All
+                </button></a>
+            </div>
+
+            <div class="image">
+                <img src="img/college.jpg" alt="" style="width: 99%;" />
+            </div>
+        </div>
+        <!-- College Gallery section -->
+        <div
+            class="carousal"
+            style="height: 700px; width: 100%; margin-top: 70px;">
+            <div class="app">
+                <div id="Sideheading" style="justify-content: flex-start;  margin-left: 100px;">
+                    <p>Get Insider Insights</p>
+                    <h5>through genuine College Reviews</h5>
+                    <h3>Uncover the  </h3>
+                    <h1 style="margin-top: 10px; border-bottom: 5px solid #ff469f;">TRUTH</h1>
+                </div>
+                <div class="cardList">
+                    <button class="cardList__btn btn btn--left buton">
+                        <div class="icon">
+                            <svg>
+                                <use xlink:href="#arrow-left"></use>
+                            </svg>
+                        </div>
+                    </button>
+                    
+                    <div class="cards__wrapper">
+                        <div class="card current--card">
+                            <div class="card__image">
+                                <a href="#"></a><img src="img/iit-delhi.jpg" alt="" /></a>
+                            </div>
+                        </div>
+
+                        <div class="card next--card">
+                            <div class="card__image">
+                                <img src="img/iit-roorkee.jpg" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="card previous--card">
+                            <div class="card__image">
+                                <img src="img/iit-kharagpur.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="cardList__btn btn btn--right buton">
+                        <div class="icon">
+                            <svg>
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="infoList">
+                    <div class="info__wrapper">
+                        <div class="info current--info">
+                            <h1 class="text name">IIT, Delhi</h1>
+                            <h4 class="text location">New Delhi</h4>
+                            <p class="text description">
+                                Ranked No.2 Institute of India
+                            </p>
+                        </div>
+
+                        <div class="info next--info">
+                            <h1 class="text name">IIT Roorkee</h1>
+                            <h4 class="text location">Uttarakhand</h4>
+                            <p class="text description">
+                                Ranked No.5 Institute of India
+                            </p>
+                        </div>
+
+                        <div class="info previous--info">
+                            <h1 class="text name">IIT, Kharagpur</h1>
+                            <h4 class="text location">West Bengal</h4>
+                            <p class="text description">
+                                Ranked No.6 Institute of India
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="app__bg">
+                    <div class="app__bg__image current--image">
+                        <img src="img/iit-delhi.jpg" alt="" />
+                    </div>
+                    <div class="app__bg__image next--image">
+                        <img src="img/iit-roorkee.jpg" alt="" />
+                    </div>
+                    <div class="app__bg__image previous--image">
+                        <img src="img/iit-kharagpur.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <svg class="icons" style="display: none">
+                <symbol
+                    id="arrow-left"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
+                    <polyline
+                        points="328 112 184 256 328 400"
+                        style="
+                            fill: none;
+                            stroke: #fff;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-width: 48px;
+                        " />
+                </symbol>
+                <symbol
+                    id="arrow-right"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
+                    <polyline
+                        points="184 112 328 256 184 400"
+                        style="
+                            fill: none;
+                            stroke: #fff;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-width: 48px;
+                        " />
+                </symbol>
+            </svg>
+        </div>
+
+        <!-- College Domain Section    -->
+        
+
+        <div class="section2">
+            <div id="head-section" >
+                <h1 style="font-size: 4vw;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><i class="fa fa-university" aria-hidden="true" style="margin-right: 30px;"></i>Select Domain Of College<i class="fa fa-university" aria-hidden="true" style="margin-left: 30px;"></i></h1>
+                <hr style ="height: 5px;text-align: center; margin: auto auto;background-color: #fb5283;width: 40%;">
+            </div>
+            <div class="aboutsection">
+                <div class="pieces" style="--clr: #009688">
+                    <div class="logoportion">
+                        <img src="img/Indian_Institute_of_Technology_Bombay_Logo.svg.png" alt="" class="logobox" />
+                    </div>
+                    <div class="logodesc">
+                        <h1>ENGINEERING</h1>
+                        <p>
+                            Hey its me who want to explore world with me, come
+                            on guys it will be fun
+                        </p>
+                        <a href="List of Engineering.html">Explore Colleges</a>
+                    </div>
+                </div>
+                <div class="pieces" style="--clr: #009688">
+                    <div class="logoportion">
+                        <img src="img/AIIMS_New_Delhi.png" alt="" class="logobox" />
+                    </div>
+                    <div class="logodesc">
+                        <h1>MEDICAL</h1>
+                        <p>
+                            Hey its me who want to explore world with me, come
+                            on guys it will be fun
+                        </p>
+                        <a href="List of Medical.html">Explore Colleges</a>
+                    </div>
+                </div>
+                <div class="pieces" style="--clr: #009688">
+                    <div class="logoportion">
+                        <img src="img/sunset.jpg" alt="" class="logobox" />
+                    </div>
+                    <div class="logodesc">
+                        <h1>LAW </h1>
+                        <p>
+                            Hey its me who want to explore world with me, come
+                            on guys it will be fun
+                        </p>
+                        <a href="List of Law.html">Explore Colleges</a>
+                    </div>
+                </div>
+                <div class="pieces" style="--clr: #009688">
+                    <div class="logoportion">
+                        <img src="img/IIM_Kozhikode_Logo.svg.png" alt="" class="logobox" />
+                    </div>
+                    <div class="logodesc">
+                        <h1>MANAGEMENT</h1>
+                        <p>
+                            Hey its me who want to explore world with me, come
+                            on guys it will be fun
+                        </p>
+                        <a href="List of Management.html">Explore Colleges</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- single college Section -->
+        <div class="row" style="padding: 100px 10px">
+            <div class="col-1" style="font-size: 2vw;">
+                <h2>
+                    IIT, Kharagpur<br />
+                    West Bengal
+                </h2>
+                <h3>How you rate this university</h3>
+                <p>Get the Details and Review</p>
+                <h4>Rating<div class="rating" style="color: gold;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div></h4>
+                <a href="collegepage/IITkha/IITprofile.html" style="text-decoration: none;"><button id="button">More Info    <i
+                                            class="fas fa-arrow-right fa-lg"
+                                            style="color: #ffffff"></i></button
+                                ></button></a>
+            </div>
+            <div class="col-2">
+                <div
+                    id="1"
+                    style="
+                        width: 100%;
+                        height: 400px;
+                        background-size: cover;
+                        background-attachment: fixed;
+                        background-position: center;
+                        position: relative;
+                        z-index: 201;
+                    ">
+                    <img
+                        src="img/iit-kharagpur.jpg"
+                        style="height: 400px"
+                        width="80%"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Team section  -->
+        <div style="width: 100%;text-align: center;padding: 3rem 1rem 0 1rem;line-height: 3rem;"><h1 style="font-size: 3.2vw;"><i class="fa-solid fa-users-gear" style="color: #ea4879;"></i>Meet The Team Members</h1></div>
+        <section>
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+                    <div class="swiper-slide ace">
+                        <div class="ace-content">
+                            <div class="image">
+                                <img src="img/sandeepd.jpg" alt="" />
+                            </div>
+                            <div class="media-icons">
+                                <i class="fab fa-facebook"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="name-profession">
+                                <span class="name">Sandeep Kumar Das</span>
+                                <span class="profession">Web Developer</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="me">
+                                <button class="aboutMe">About Me</button>
+                                <button class="hireMe">Resume</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ace">
+                        <div class="ace-content">
+                            <div class="image">
+                                <img src="img/sudhirap.jpg" alt="" />
+                            </div>
+                            <div class="media-icons">
+                                <i class="fab fa-facebook"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="name-profession">
+                                <span class="name">A Sudhir Kumar Patra</span>
+                                <span class="profession">Web Developer</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="me">
+                                <button class="aboutMe">About Me</button>
+                                <button class="hireMe">Resume</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ace">
+                        <div class="ace-content">
+                            <div class="image">
+                                <img src="img/rupamm.jpg" alt="" />
+                            </div>
+                            <div class="media-icons">
+                                <i class="fab fa-facebook"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="name-profession">
+                                <span class="name">Rupam Mohanty</span>
+                                <span class="profession">Web Developer</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="me">
+                                <button class="aboutMe">About Me</button>
+                                <button class="hireMe">Resume</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ace">
+                        <div class="ace-content">
+                            <div class="image">
+                                <img src="img/mansib.jpg" alt="" />
+                            </div>
+                            <div class="media-icons">
+                                <i class="fab fa-facebook"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="name-profession">
+                                <span class="name">Manasi Behera</span>
+                                <span class="profession">Web Developer</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="me">
+                                <button class="aboutMe">About Me</button>
+                                <button class="hireMe">Resume</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ace">
+                        <div class="ace-content">
+                            <div class="image">
+                                <img src="img/subhenduj.jpg" alt="" />
+                            </div>
+                            <div class="media-icons">
+                                <i class="fab fa-facebook"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="name-profession">
+                                <span class="name">Subhendu Jena</span>
+                                <span class="profession">Web Developer</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="me">
+                                <button class="aboutMe">About Me</button>
+                                <button class="hireMe">Resume</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ace">
+                        <div class="ace-content">
+                            <div class="image">
+                                <img src="img/tanujap.jpg" alt="" />
+                            </div>
+                            <div class="media-icons">
+                                <i class="fab fa-facebook"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="name-profession">
+                                <span class="name">M Tanuja Patra</span>
+                                <span class="profession">Web Developer</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="me">
+                                <button class="aboutMe">About Me</button>
+                                <button class="hireMe">Resume</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ace">
+                        <div class="ace-content">
+                            <div class="image">
+                                <img src="img/prativad.jpg" alt="" />
+                            </div>
+                            <div class="media-icons">
+                                <i class="fab fa-facebook"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="name-profession">
+                                <span class="name">Prativa Das</span>
+                                <span class="profession">Web Developer</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="me">
+                                <button class="aboutMe">About Me</button>
+                                <button class="hireMe">Resume</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ace">
+                        <div class="ace-content">
+                            <div class="image">
+                                <img src="img/tarunr.jpg" alt="" />
+                            </div>
+                            <div class="media-icons">
+                                <i class="fab fa-facebook"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="name-profession">
+                                <span class="name">G Tarun Reddy</span>
+                                <span class="profession">Web Developer</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="me">
+                                <button class="aboutMe">About Me</button>
+                                <button class="hireMe">Resume</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ace">
+                        <div class="ace-content">
+                            <div class="image">
+                                <img src="img/suvams.jpg" alt="" />
+                            </div>
+                            <div class="media-icons">
+                                <i class="fab fa-facebook"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="name-profession">
+                                <span class="name">Suvam Swain</span>
+                                <span class="profession">Web Developer</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="me">
+                                <button class="aboutMe">About Me</button>
+                                <button class="hireMe">Resume</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+
+        <script>
+            function sliding(x) {
+    if (x.matches) {
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 60,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    } else {
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 60,
+            slidesPerGroup: 2,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    }
+}
+        </script>
+
+        <!-- Footer Section  -->
+        <footer>
+            <div class="downside">
+                <div class="col">
+                    <img src="img/website logo.png" alt="" class="footlogo">
+                    <p>my name sishs dfksdks dfhffjmy name sishs dfksdks dfhffjmy name sishs dfksdks dfhffjmy name sishs dfksdks dfhffjmy name sishs dfksdks dfhffjmy name sishs dfksdks dfhffj</p>
+                </div>
+                <div class="col">
+                    <h3>Office <div class="underline"></div></h3>
+                    <p>Near IGIT College,</p>
+                    <p>Sarang, Talcher</p>
+                    <p>Odisha, India, P.O: 751221</p>
+                    <p class="emailid">Eternals@gmail.com</p>
+                    <h4>236273777288</h4>
+                </div>
+                <div class="col">
+                    <h3>link<div class="underline"></div></h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="newcontactform-main/index.html">Contact Us</a></li>
+                        <li><a href="aboutPage/about.html">About us</a></li>
+                        <li><a href="main-listing.html">Colleges</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Newsletter<div class="underline"></div></h3>
+                    <form>
+                        <i class="far fa-envelop"></i>
+                        <input type="email" placeholder="Enter Your Mail......." required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i> </button>
+                    </form>
+                    <div class="socialmedia">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-whatsapp"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-github"></i>
+                    </div>
+                </div>
+            </div><hr>
+            <p class="copyright">ETERNALS @all Rights Reserved</p>
+        </footer>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script
+            type="text/javascript"
+            src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>

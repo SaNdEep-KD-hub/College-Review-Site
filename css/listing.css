@@ -1,0 +1,408 @@
+/*  import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background: rgb(50, 49, 49);
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 50px;
+    background: whitesmoke;
+    z-index: 9999;
+    box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #fb5283;
+}
+
+header .navbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .navbar a {
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 0.2rem 0.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 05px;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+header .navbar a:hover {
+    background: #fb5283;
+    transition: 0.6s;
+    color: white;
+}
+
+header .btn {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.container {
+    display: flex;
+    margin-top: 200px;
+    width: 80%;
+    margin: auto;
+}
+@media (max-width: 991px) {
+    html {
+        font-size: 75%;
+    }
+    header {
+        padding: 1rem 2rem;
+        position: fixed;
+        top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    header .btn {
+        display: block;
+    }
+
+    header {
+        color: #fb5283;
+        position: fixed;
+        top: 0;
+    }
+
+    header .navbar {
+        position: fixed;
+        flex-direction: column;
+        min-width: 300px;
+        height: 100vh;
+        background: #333;
+        top: 0;
+        right: -100%;
+        transition: all 0.9s;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 10rem;
+    }
+
+    header .navbar.active2 {
+        right: 0;
+        transition: 0.9s;
+    }
+
+    header .navbar .close-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 25px;
+    }
+
+    header .navbar a {
+        display: block;
+        font-size: 1.9rem;
+        width: 100%;
+        text-align: center;
+        line-height: 40px;
+        margin: 0 15px;
+        color: whitesmoke;
+    }
+
+    header .navbar a:hover {
+        background: #fb5283;
+        color: #fff;
+    }
+
+    header .logo {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    section h2 {
+        color: #fff;
+        font-size: 5rem;
+        padding: 2rem;
+        letter-spacing: 0.9rem;
+        text-align: center;
+    }
+}
+
+/* Main Section */
+.main {
+    width: 100%;
+}
+.main-top {
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgb(43, 43, 43);
+}
+.main-body {
+    padding: 10px 10px 10px 20px;
+}
+h1 {
+    margin: 20px 10px;
+}
+.search_bar {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.search_bar input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid rgb(190, 190, 190);
+}
+.search_bar input:focus {
+    border: 1px solid blueviolet;
+}
+.search_bar select {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+    margin-left: 2rem;
+}
+.search_bar .filter {
+    width: 300px;
+}
+
+.boxxy {
+    margin-top: 65px;
+    padding: 1rem 0 0 1rem;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #fff;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.boxxy .content {
+    flex-basis: 40%;
+}
+
+.boxxy .image {
+    flex-basis: 50%;
+}
+
+.boxxy .content {
+    flex-wrap: wrap;
+}
+
+.boxxy .content h3 {
+    color: black;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3vw;
+}
+
+.boxxy .content .btn {
+    text-decoration: none;
+    color: #fff;
+    width: 50%;
+    font-size: 1.5vw;
+    margin-top: 30px;
+    margin-left: 15px;
+    padding: 8px 22px;
+    border-radius: 6px;
+    background: #7d2ae8;
+    transition: all 0.2s ease;
+}
+
+.boxxy .content button:active {
+    transform: scale(0.96);
+}
+
+.boxxy .content .btn:hover {
+    background-color: #fb5283;
+}
+
+.boxxy .content p {
+    padding: 0.5rem 0;
+    font-size: 1.5vw;
+    color: #666;
+}
+
+.tags_bar {
+    width: 55%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.tag {
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+.tag i {
+    margin-right: 0.7rem;
+}
+.row {
+    display: flex;
+    padding: 10px;
+    margin-top: 1.3rem;
+    justify-content: space-between;
+}
+.row p {
+    color: rgb(54, 54, 54);
+    font-size: 15px;
+}
+.row p span {
+    color: blueviolet;
+}
+.college_card {
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 10px;
+    background: #ededed;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    border: 2px solid rgb(190, 190, 190);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+.college_details {
+    display: flex;
+    width: 80%;
+}
+.college_details .img img {
+    border-radius: 30px;
+}
+.college_details .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.college_details .text {
+    margin-left: 2.3rem;
+}
+.college_details .text span {
+    color: rgb(116, 112, 112);
+}
+.fees_structure {
+    text-align: right;
+    color: rgb(54, 54, 54);
+    padding: 40px 0;
+}
+.college_card:active {
+    border: 2px solid blueviolet;
+    transition: 0.4s;
+}
+
+#button {
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+
+#button img {
+    width: 30px;
+    display: none;
+}
+#button:hover img {
+    display: block;
+}
+
+#button:hover {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pagination {
+    display: flex;
+    width: 510px;
+    margin-left: 30%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.pagination ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 8px;
+    border-radius: 50px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+.pagination ul li {
+    color: red;
+    list-style: none;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+.pagination ul li.numb {
+    list-style: none;
+    height: 45px;
+    width: 45px;
+    margin: 0 3px;
+    line-height: 45px;
+    border-radius: 50%;
+}
+.pagination ul li.numb.first {
+    margin: 0px 3px 0 -5px;
+}
+.pagination ul li.numb.last {
+    margin: 0px -5px 0 3px;
+}
+.pagination ul li.dots {
+    font-size: 22px;
+    cursor: default;
+}
+.pagination ul li.btn {
+    padding: 0 20px;
+    border-radius: 50px;
+}
+.pagination li.active,
+.pagination ul li.numb:hover,
+.pagination ul li:first-child:hover,
+.pagination ul li:last-child:hover {
+    color: #fff;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+}
